@@ -2,7 +2,7 @@ import React from 'react';
 import { FaPhoneAlt, FaFacebook, FaEnvelope, FaClock } from 'react-icons/fa';
 import { SiLine } from 'react-icons/si';
 import { motion } from 'framer-motion';
-import Typical from 'react-typical';
+import { Typewriter } from 'react-simple-typewriter';
 
 function Contact() {
   return (
@@ -10,13 +10,16 @@ function Contact() {
       <div className="container mx-auto px-4">
         {/* หัวข้อ */}
         <h1 className="text-4xl font-bold text-center text-green-600 mb-12">
-          <Typical
-            steps={['ติดต่อเรา', 2000, 'พูดคุยกับเราได้เลย!', 2000]}
-            loop={Infinity}
-          />
-          <span className="block w-16 h-1 bg-gradient-to-r from-green-500 to-green-700 mx-auto mt-4"></span>
-        </h1>
-
+  <Typewriter
+    words={['ติดต่อเรา', 'พูดคุยกับเราได้เลย!']}
+    loop={0} 
+    cursor
+    cursorStyle="|"
+    typeSpeed={100}
+    deleteSpeed={50}
+    delaySpeed={1000}
+  />
+</h1>
         {/* Section หลัก */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           {/* คอลัมน์ Google Maps และแผนที่ */}

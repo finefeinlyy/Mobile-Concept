@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination, Autoplay } from 'swiper/modules';
-import Typical from 'react-typical';
+import { Typewriter } from 'react-simple-typewriter';
 
 function Home() {
   return (
@@ -15,20 +15,21 @@ function Home() {
           style={{ backgroundImage: "url(/images/471177045_122180371616148517_1257703468018429464_n.jpg)" }}
         ></div>
         <div className="relative z-10 container mx-auto px-4 text-center">
-          <h1 className="text-5xl font-bold mb-6 drop-shadow-lg">
-            <Typical
-              steps={[
-                'ยินดีต้อนรับสู่ Mobile Concept',
-                3000,
-                'ติดตั้งเครื่องเสียงคุณภาพสูง',
-                3000,
-                'ยกระดับการขับขี่ของคุณ',
-                3000,
-              ]}
-              loop={Infinity}
-              wrapper="span"
-            />
-          </h1>
+        <h1 className="text-5xl font-bold mb-6 drop-shadow-lg">
+  <Typewriter
+    words={[
+      'ยินดีต้อนรับสู่ Mobile Concept',
+      'ติดตั้งเครื่องเสียงคุณภาพสูง',
+      'ยกระดับการขับขี่ของคุณ',
+    ]}
+    loop={0} // 0 หมายถึงวนลูปไม่สิ้นสุด
+    cursor
+    cursorStyle="|"
+    typeSpeed={100} // ความเร็วในการพิมพ์
+    deleteSpeed={50} // ความเร็วในการลบ
+    delaySpeed={1000} // ระยะเวลาหยุดระหว่างข้อความ
+  />
+</h1>
           <p className="text-lg leading-relaxed mb-8 drop-shadow-lg">
             ผู้เชี่ยวชาญด้านเครื่องเสียงรถยนต์ที่มีประสบการณ์กว่า <strong>30 ปี</strong>
           </p>
