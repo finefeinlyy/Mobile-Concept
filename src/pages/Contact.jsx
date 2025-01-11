@@ -8,7 +8,7 @@ function Contact() {
   return (
     <div className="bg-gradient-to-r from-green-100 via-white to-green-100 py-16">
       <div className="container mx-auto px-4">
-        {/* หัวข้อ */}
+        {/* Title */}
         <h1 className="text-4xl font-bold text-center text-green-600 mb-12">
   <Typewriter
     words={['ติดต่อเรา', 'พูดคุยกับเราได้เลย!']}
