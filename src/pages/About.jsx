@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 function About() {
   return (
     <div className="bg-gradient-to-r from-green-100 via-white to-green-100 py-16">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 pt-28">
         {/* Hero Section */}
         <motion.div
           initial={{ opacity: 0, y: -50 }}
@@ -77,11 +77,10 @@ function About() {
                 className="rounded-lg shadow-lg transition-transform transform hover:scale-105"
               />
               <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-green-600 opacity-30 rounded-lg"></div>
-              
             </div>
             <p className="text-gray-700 mt-4 text-lg italic">
-                “คุณป้อม ผู้ก่อตั้ง Mobile Concept ด้วยประสบการณ์กว่า 30 ปีในวงการเครื่องเสียงรถยนต์ เชี่ยวชาญด้าน Digital Signal Processing (DSP) พร้อมมุ่งมั่นยกระดับประสบการณ์การขับขี่ของคุณให้เหนือชั้น”
-              </p>
+              “คุณป้อม ผู้ก่อตั้ง Mobile Concept ด้วยประสบการณ์กว่า 30 ปีในวงการเครื่องเสียงรถยนต์ เชี่ยวชาญด้าน Digital Signal Processing (DSP) พร้อมมุ่งมั่นยกระดับประสบการณ์การขับขี่ของคุณให้เหนือชั้น”
+            </p>
           </motion.div>
         </div>
       </div>

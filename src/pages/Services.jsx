@@ -1,11 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaCheckCircle } from 'react-icons/fa';
-import { FaAward, FaUsers, FaTools } from "react-icons/fa";
+import { FaCheckCircle, FaAward, FaUsers, FaTools } from 'react-icons/fa';
 
 function Services() {
   return (
-    <div className="bg-gradient-to-r from-green-100 via-white to-green-100 py-16">
+    <div className="bg-gradient-to-r from-green-100 via-white to-green-100 pt-28 pb-16">
       <div className="container mx-auto px-4">
         {/* Hero Section */}
         <motion.div
@@ -15,9 +14,7 @@ function Services() {
           transition={{ duration: 0.8 }}
           className="text-center mb-12"
         >
-          <h1 className="text-5xl font-bold text-green-600">
-            บริการของเรา
-          </h1>
+          <h1 className="text-5xl font-bold text-green-600">บริการของเรา</h1>
           <p className="text-lg text-gray-600 mt-4">
             บริการครบวงจรด้านระบบเสียงและอุปกรณ์เสริมสำหรับรถยนต์
           </p>
@@ -41,11 +38,11 @@ function Services() {
               {/* รายการบริการ */}
               <ul className="list-none space-y-4">
                 {[
-                  "จำหน่ายชุดเครื่องเสียงไฮเอนด์จากทั่วโลก",
-                  "อุปกรณ์เสริม: กล้องบันทึก, กล้องมองหลัง, จอแอนดรอย, ระบบ CarPlay & Android Auto, กล่อง AI Box Android",
-                  "บริการถอดย้ายระบบเสียงข้ามคัน",
-                  "ปลดล็อคจอและเปลี่ยนวิทยุ",
-                  "บริการ Wrap รถ และติดฟิล์มกรองแสง",
+                  'จำหน่ายชุดเครื่องเสียงไฮเอนด์จากทั่วโลก',
+                  'อุปกรณ์เสริม: กล้องบันทึก, กล้องมองหลัง, จอแอนดรอย, ระบบ CarPlay & Android Auto, กล่อง AI Box Android',
+                  'บริการถอดย้ายระบบเสียงข้ามคัน',
+                  'ปลดล็อคจอและเปลี่ยนวิทยุ',
+                  'บริการ Wrap รถ และติดฟิล์มกรองแสง',
                 ].map((service, index) => (
                   <li key={index} className="flex items-start gap-4">
                     <FaCheckCircle className="text-green-600 text-3xl flex-shrink-0" />
@@ -69,7 +66,7 @@ function Services() {
           >
             <div className="relative">
               <img
-                src="/images/471521621_122180837666148517_7198626254187450997_n.jpg" 
+                src="/images/471521621_122180837666148517_7198626254187450997_n.jpg"
                 alt="บริการของเรา"
                 className="rounded-lg shadow-lg transition-transform transform hover:scale-105"
               />
@@ -90,34 +87,32 @@ function Services() {
             ทำไมต้องเลือกเรา
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {[
-  {
-    title: "ประสบการณ์กว่า 30 ปี",
-    description: "ผู้เชี่ยวชาญในระบบเสียงรถยนต์ที่พร้อมตอบโจทย์ทุกความต้องการ",
-    icon: <FaAward className="text-green-600 text-6xl mx-auto mb-4" />,
-  },
-  {
-    title: "ทีมงานมืออาชีพ",
-    description: "ช่างผู้ชำนาญการและใจดี พร้อมให้คำปรึกษาอย่างตรงจุด",
-    icon: <FaUsers className="text-green-600 text-6xl mx-auto mb-4" />,
-  },
-  {
-    title: "อุปกรณ์ทันสมัย",
-    description: "ใช้เทคโนโลยีและผลิตภัณฑ์ที่ทันสมัยที่สุด",
-    icon: <FaTools className="text-green-600 text-6xl mx-auto mb-4" />,
-  },
-].map((highlight, index) => (
-  <div
-    key={index}
-    className="bg-white p-6 rounded-lg shadow-lg text-center transition-transform transform hover:scale-105"
-  >
-    {highlight.icon}
-    <h3 className="text-2xl font-bold text-green-600">
-      {highlight.title}
-    </h3>
-    <p className="text-gray-700 mt-4">{highlight.description}</p>
-  </div>
-))}
+            {[
+              {
+                title: 'ประสบการณ์กว่า 30 ปี',
+                description: 'ผู้เชี่ยวชาญในระบบเสียงรถยนต์ที่พร้อมตอบโจทย์ทุกความต้องการ',
+                icon: <FaAward className="text-green-600 text-6xl mx-auto mb-4" />,
+              },
+              {
+                title: 'ทีมงานมืออาชีพ',
+                description: 'ช่างผู้ชำนาญการและใจดี พร้อมให้คำปรึกษาอย่างตรงจุด',
+                icon: <FaUsers className="text-green-600 text-6xl mx-auto mb-4" />,
+              },
+              {
+                title: 'อุปกรณ์ทันสมัย',
+                description: 'ใช้เทคโนโลยีและผลิตภัณฑ์ที่ทันสมัยที่สุด',
+                icon: <FaTools className="text-green-600 text-6xl mx-auto mb-4" />,
+              },
+            ].map((highlight, index) => (
+              <div
+                key={index}
+                className="bg-white p-6 rounded-lg shadow-lg text-center transition-transform transform hover:scale-105"
+              >
+                {highlight.icon}
+                <h3 className="text-2xl font-bold text-green-600">{highlight.title}</h3>
+                <p className="text-gray-700 mt-4">{highlight.description}</p>
+              </div>
+            ))}
           </div>
         </motion.div>
       </div>

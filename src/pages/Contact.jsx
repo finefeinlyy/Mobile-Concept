@@ -6,23 +6,24 @@ import { Typewriter } from 'react-simple-typewriter';
 
 function Contact() {
   return (
-    <div className="bg-gradient-to-r from-green-100 via-white to-green-100 py-16">
+    <div className="bg-gradient-to-r from-green-100 via-white to-green-100 pt-28 pb-16">
       <div className="container mx-auto px-4">
         {/* Title */}
-        <h1 className="text-4xl font-bold text-center text-green-600 mb-12">
-  <Typewriter
-    words={['ติดต่อเรา', 'พูดคุยกับเราได้เลย!']}
-    loop={0} 
-    cursor
-    cursorStyle="|"
-    typeSpeed={100}
-    deleteSpeed={50}
-    delaySpeed={1000}
-  />
-</h1>
-        {/* Section หลัก */}
+        <h1 className="text-6xl font-bold text-center text-green-600 mb-12">
+          <Typewriter
+            words={['ติดต่อเรา', 'พูดคุยกับเราได้เลย!']}
+            loop={0}
+            cursor
+            cursorStyle="|"
+            typeSpeed={100}
+            deleteSpeed={50}
+            delaySpeed={1000}
+          />
+        </h1>
+
+        {/* Main Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-          {/* คอลัมน์ Google Maps และแผนที่ */}
+          {/* Google Maps and Image */}
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -31,7 +32,7 @@ function Contact() {
             className="space-y-8"
           >
             {/* Google Maps */}
-            <div className="shadow-lg rounded-lg overflow-hidden">
+            <div className="shadow-lg rounded-lg overflow-hidden border border-green-300">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.8142971679454!2d100.62401617522566!3d13.729690186659859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29fa0d92ffa9f%3A0xdafd94c8acad0101!2z4Lij4LmJ4Liy4LiZ4LmA4LiE4Lij4Li34LmI4Lit4LiH4LmA4Liq4Li14Lii4LiH4Lij4LiWIE1vYmlsZSBDb25jZXB0IEF1ZGlvIC0gVXBncmFkZSB5b3VyIGRyaXZlICE!5e0!3m2!1sth!2sth!4v1736595156308!5m2!1sth!2sth"
                 width="100%"
@@ -43,21 +44,20 @@ function Contact() {
               ></iframe>
             </div>
 
-            {/* ภาพแผนที่ */}
-            <div className="shadow-lg rounded-lg overflow-hidden">
+            {/* Image with Description */}
+            <div className="shadow-lg rounded-lg overflow-hidden border border-green-300">
               <img
                 src="/images/2102E31B-9F44-465C-BFA0-2A8188327235.png"
                 alt="แผนที่ร้านโมบาย คอนเซปท์"
                 className="w-full h-auto"
               />
-              
             </div>
             <p className="text-gray-600 text-center mt-4">
-                แผนที่ร้านโมบาย คอนเซปท์ และ QR Code สำหรับนำทาง
-              </p>
+              แผนที่ร้านโมบาย คอนเซปท์ และ QR Code สำหรับนำทาง
+            </p>
           </motion.div>
 
-          {/* คอลัมน์ช่องทางการติดต่อ */}
+          {/* Contact Information */}
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -65,11 +65,12 @@ function Contact() {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="space-y-8"
           >
-            {/* ช่องทางการติดต่อ */}
-            <div className="bg-white p-6 rounded-lg shadow-lg hover:scale-105 hover:shadow-xl transition-transform text-center">
-              <h3 className="text-2xl font-bold mb-6 text-gray-800">ช่องทางการติดต่อ</h3>
+            {/* Contact Methods */}
+            <div className="bg-white p-6 rounded-lg shadow-lg border border-green-300 hover:scale-105 hover:shadow-xl transition-transform text-center">
+              <h3 className="text-2xl font-bold mb-6 text-gray-800">
+                ช่องทางการติดต่อ
+              </h3>
               <div className="flex flex-col gap-4">
-                {/* เบอร์โทร */}
                 <div className="flex items-center justify-center gap-4">
                   <FaPhoneAlt className="text-green-600 text-2xl" />
                   <a
@@ -79,7 +80,6 @@ function Contact() {
                     +66 81 632 2663
                   </a>
                 </div>
-                {/* อีเมล */}
                 <div className="flex items-center justify-center gap-4">
                   <FaEnvelope className="text-green-600 text-2xl" />
                   <a
@@ -89,7 +89,6 @@ function Contact() {
                     mconceptth@gmail.com
                   </a>
                 </div>
-                {/* Facebook */}
                 <div className="flex items-center justify-center gap-4">
                   <FaFacebook className="text-green-600 text-2xl" />
                   <a
@@ -101,7 +100,6 @@ function Contact() {
                     Facebook
                   </a>
                 </div>
-                {/* Line */}
                 <div className="flex items-center justify-center gap-4">
                   <SiLine className="text-green-600 text-2xl" />
                   <a
@@ -116,8 +114,8 @@ function Contact() {
               </div>
             </div>
 
-            {/* เวลาทำการ */}
-            <div className="bg-white p-6 rounded-lg shadow-lg hover:scale-105 hover:shadow-xl transition-transform">
+            {/* Operating Hours */}
+            <div className="bg-white p-6 rounded-lg shadow-lg border border-green-300 hover:scale-105 hover:shadow-xl transition-transform">
               <h3 className="text-2xl font-bold mb-4 text-gray-800 flex items-center gap-2">
                 <FaClock className="text-green-600" /> เวลาทำการ
               </h3>
@@ -126,8 +124,8 @@ function Contact() {
               <p className="text-gray-600">วันอาทิตย์: หยุดทำการ</p>
             </div>
 
-            {/* คำถามที่พบบ่อย */}
-            <div className="bg-white p-6 rounded-lg shadow-lg hover:scale-105 hover:shadow-xl transition-transform">
+            {/* FAQs */}
+            <div className="bg-white p-6 rounded-lg shadow-lg border border-green-300 hover:scale-105 hover:shadow-xl transition-transform">
               <h3 className="text-2xl font-bold mb-4 text-gray-800">คำถามที่พบบ่อย</h3>
               <details className="mb-4">
                 <summary className="font-medium text-gray-800 cursor-pointer">
